@@ -1,6 +1,6 @@
 # API and MongoDB
 ## Objective
-Create an a C# API using Atlas MongoDB cloud server.
+Create a C# API using Atlas MongoDB cloud server.
 ## Technologies
  + Mongo Atlas
  + C#

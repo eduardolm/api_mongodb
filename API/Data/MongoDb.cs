@@ -12,7 +12,6 @@ namespace API.Data
         public IMongoDatabase Db { get; }
         private string _dbUsername;
         private string _dbPassword;
-
         public MongoDb(IConfiguration configuration)
         {
             try
@@ -23,7 +22,6 @@ namespace API.Data
                 var connectionString =
                     $"mongodb+srv://{_dbUsername}:{_dbPassword}@cluster0.axk4f.mongodb.net/test?retryWrites=" +
                     $"true&w=majority";
-                
                 var settings = MongoClientSettings.FromUrl(new MongoUrl(connectionString));
                 var client = new MongoClient(settings);
                 Db = client.GetDatabase(configuration["DbName"]);

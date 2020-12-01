@@ -26,6 +26,10 @@ List data | _/infected_ | GET
 Update gender | _/infected_ | PUT
 Delete data | _/infected/{birthday}_ | DELETE
 
+## URI
+The API can be tested with Postman or similar apps, making requests to the following URI:
+    https://localhost:5001/infected
+
 ## Payload Layout
 In this section, we can check both payload and responses for the various accepted HTTP methods:
 
@@ -84,5 +88,8 @@ In this section, we can check both payload and responses for the various accepte
         "Latitude": -21.7994511,
         "Longitude": -48.1836042
     }
+    
+ #### DELETE - Request URI
+    https://localhost:5001/infected/1930-03-01
 
 
